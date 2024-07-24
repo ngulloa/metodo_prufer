@@ -55,7 +55,8 @@ while n_actual<n_valor_propio:
     if int(T[-1]) > n_actual:
         n_actual = int(T[-1])
         bar.next()
-
+        
+# Final barra de progreso
 bar.finish()
 
 # Output en consola
