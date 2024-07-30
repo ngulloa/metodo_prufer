@@ -3,13 +3,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 n_valor_propio = int(input("N-ésimo valor propio a calcular: "))
-n = int(input("Cantidad de puntos para muestreo (suficientemente grande): "))
+n = int(input("Cantidad de puntos para muestreo: "))
 
 l=1
-xa = 0
-xb = 1
+xa = -2
+xb = 2
 he = 0.1
-hx = (xb-xa)/n 
+hx = (xb-xa)/n
 
 # Aquí se define el potencial
 def potencial(x):
@@ -26,9 +26,10 @@ n_actual = 0
 i=0
 
 #Barra de progreso
-bar = ChargingBar("Procesando", max = n_valor_propio)
+bar = ChargingBar("Procesando", max = n_valor_propio + 1)
+bar.next()
 
-while n_actual<n_valor_propio:
+while n_actual < n_valor_propio:
     
     # Secuencias iniciales
     p = [1,1]
@@ -41,6 +42,7 @@ while n_actual<n_valor_propio:
         thetha1 = (l*hx)/(p[k]**2) + thetha[k]
         thetha.append(thetha1)
     
+    # Variable en el dominio de la energía
     i += he
     
     # Último valor de la secuencia thetha
