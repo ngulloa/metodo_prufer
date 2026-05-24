@@ -32,7 +32,7 @@ A continuación se listan los alcances y limitaciones de cada archivo ```.py```:
 # REQUISITOS E INSTALACION 💻
 ## Requisitos Previos
 
-Asegúrate de tener instalados **Python 3.7** o superior y las siguientes librerias (CLICK AQUÍ PARA SABER CÓMO INSTALAR LAS LIBRERIAS):
+Asegúrate de tener instalados **Python 3.7** o superior y las siguientes librerias:
  - progress
  - matpltlib
  - numpy
